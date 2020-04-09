@@ -1,3 +1,19 @@
+'''
+Python 3 implementation of Trie data structure, which stores lowercase english alphabets and every node
+has an attribute `terminating` to store number of strings inserted which was terminated at that node. 
+
+It can be used as this code below:
+>>> t = Trie()
+>>> t.insert("pqrs") # inserts "pqrs" to the Trie
+>>> t.insert("pqst")
+>>> t.query("pqrs")
+1
+--------------------------------
+@author: Tarit Goswami, Software Developer, India
+@date: 09/04/2020
+'''
+
+
 class TrieNode:
 	'''Represents a single node in a Trie, it contains a variable to keep track of number of strings ends at that node and a list of length 26 to store address of next nodes'''
 
